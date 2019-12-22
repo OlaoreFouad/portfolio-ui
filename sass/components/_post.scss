@@ -1,0 +1,109 @@
+.post {
+
+    background-color: #fff;
+    border-radius: 5px;
+    // width: 350px;
+    box-shadow: 3px 3px 5px rgba(#000, .2);
+    // margin-top: 15%;
+
+    &:nth-child(3) {
+        margin-top: 0!important;
+    }
+
+    &:nth-child(4) {
+        @include add-space;
+    }
+
+    &:nth-child(5) {
+        @include add-space;
+    }
+
+    &:nth-child(6) {
+        @include add-space;
+    }
+
+
+    img {
+        height: 150px;
+        width: 80%;
+        position: relative;
+        left: 10%;
+        right: 10%;
+        margin-top: -13%;
+        border-radius: 5px;
+    }
+
+    .post-tags {
+        .post-tag {
+            font-style: italic;
+            margin: 2px 3px;
+
+            &:hover {
+                text-decoration: underline;
+                cursor: pointer;
+            }
+
+        }
+    }
+
+    .post-title-wrapper {
+        .post-title {
+            font-family: 'Lilita';
+            font-weight: 600;
+            font-size: 1.6rem;
+            width: 100%;
+            color: $color-accent;
+        }
+    }
+
+    .post-snip-wrapper {
+
+        margin: 5px 0;
+
+        .post-snip {
+            color: gray;
+            margin: 5px 0;
+        }
+    }
+
+    .post-date-wrapper {
+
+        display: flex;
+        justify-content: flex-end;
+        margin: 10px 0;
+
+        .post-date {
+            color: gray;
+            font-size: .9rem;
+        }
+    }
+
+    .post-content {
+        padding: 23px;
+    }
+
+    .button-wrapper {
+
+        display: flex;
+        justify-content: flex-end;
+
+        .read-post-button {
+            color: white;
+            outline: none;
+            border: none;
+            margin: 6px 18px;
+            padding: 5px 10px;
+            transition: all .2s;
+            font-size: 1rem;
+            background-color: $color-accent;
+            box-shadow: 0 1.5px 4px ;
+            border-radius: 3px;
+
+            &:hover {
+                background-color: darken($color: $color-accent, $amount: 5%);
+                cursor: pointer;
+            }
+
+        }
+    }
+}

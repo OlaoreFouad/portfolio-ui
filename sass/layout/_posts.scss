@@ -1,0 +1,16 @@
+.section-posts {
+    // $section-padding: 1% 2%;
+    padding: $section-padding;
+
+    .swiper-container {
+        padding: 35px 0;
+    }
+
+    .posts {
+        margin-top: 7.5%;
+        display: grid;
+        grid-template: 1fr / repeat(auto-fit, minmax(280px, 1fr));
+        grid-gap: 10px;
+    }
+
+}

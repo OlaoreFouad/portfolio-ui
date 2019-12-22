@@ -1,0 +1,78 @@
+.section-about {
+    padding: $section-padding;
+
+    &__info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        span {
+            color: $color-secondary;
+            font-size: 2.0em;
+            font-weight: bolder;
+        }
+
+        p {
+            padding: .5%;
+            text-indent: 10%;
+            line-height: 1.1;
+            font-size: 1.3em;
+
+            .android-link {
+                color: green;
+            }
+
+            .ng-link {
+                color: red;
+            }
+            
+            .basic-link {
+                color: $color-primary-dark;
+            }
+
+            .sec-link {
+                color: $color-secondary;
+            }
+
+            .accent-link {
+                color: $color-accent;
+            }
+
+        }
+
+        .col-1-of-2:first-child {
+            display: block;
+        }
+
+        .col-1-of-2:last-child {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .img-container {
+                width: 95%;
+                height: 95%;
+                box-shadow: 1.2em 1.2em 2em #a2a2a2;    
+                border-radius: .9em;
+
+                caption {
+                    color: #a2a2a2;
+                    text-transform: uppercase;
+                    font-size: 1.4rem;
+                }
+
+                img {
+                    width: 100%;
+                    border-radius: .9em;
+                    height: 100%;
+
+                    &:hover {
+                        height: 100%;
+                        cursor: pointer;
+                        width: 100%;
+                        transform: scaleX(1.01) scaleY(1.01);
+                    }
+                }
+            }
+        }
+    }
+}

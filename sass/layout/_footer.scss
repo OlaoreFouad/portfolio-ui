@@ -1,0 +1,28 @@
+.footer {
+    padding: .5% 2%;
+    text-align: center;
+    background-image: linear-gradient(to right,
+        rgba(253, 203, 110, 0.6), rgba(235, 206, 46, 0.6)
+        );
+    border-radius: 20px;
+    background-size: cover;
+
+    a {
+        text-decoration: none;
+    }
+
+    i {
+        font-size: 1.4rem;
+    }
+
+    i.fa-twitter {
+        color: blue;
+    }
+
+    i.fa-github {
+        color: black;
+    }
+
+    background-color: $color-primary;
+
+}

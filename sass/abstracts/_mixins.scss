@@ -1,0 +1,23 @@
+@mixin add-space {
+    margin-top: 15%;
+}
+
+@mixin link-styling {
+    color: black;
+    text-decoration: none;
+}
+
+@mixin data-input {
+    width: 95%;
+    border: 1px solid lightgray;
+    padding: 6px 5px;
+    border-radius: 4px;
+    font-size: .95rem;
+    caret-color: $color-primary;
+    margin: 5px 0;
+
+    &:focus {
+        outline: none;
+        box-shadow: .1rem .1rem $color-primary;
+    }
+}

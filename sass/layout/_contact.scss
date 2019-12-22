@@ -1,0 +1,139 @@
+.section-contact {
+    padding: $section-padding;
+    margin-bottom: 30px;
+
+    .contact-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        .contact-grid-intro {
+
+            span {
+                color: $color-secondary;
+                font-weight: bolder;
+                font-size: 2rem;
+                margin: 5px 2px;
+            }
+
+            p {
+                font-size: 1.2rem;
+                line-height: 1.2;
+
+                .social-link {
+                  text-decoration: underline;
+                }
+
+                .tw-link, .tw-link:active, .tw-link:visited {
+                    color: blue;
+                }
+
+                .gth-link, .gth-link:active, .gth-link:visited {
+                    color: gray;
+                }
+
+            }
+
+        }
+
+        .contact-grid-form {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .form-pane {
+
+                width: 80%;
+                box-shadow: 3px 3px 5px lightgray;
+
+                .form-pane-header {
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                    background-color: black;
+                    width: 100%;
+                    padding: 5px;
+                    height: 40px;
+                    display: flex;
+
+                    .ball {
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                        margin: auto 5px;
+                    }
+
+                    .red-ball { background-color: #E74C3C }
+                    .green-ball { background-color: #2ECC71 }
+                    .yellow-ball { background-color: #F1C40F }
+
+                    img {
+                        height: 100%;
+                        margin-right: 10px;
+                        margin-left: auto;
+                    }
+
+                }
+
+                .form-pane-body {
+                    
+                    background-color: lighten($color: lightgray, $amount: 15%);
+                    width: 100%;
+                    border-bottom-left-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                    padding: 5px;
+
+                    form {
+
+                        text-align: center;
+
+                        input:first-child {
+                            margin-top: 15px;
+                        }
+
+                        input {
+                            padding: 6px 5px;
+                        }
+
+                        input, textarea {
+                            @include data-input;
+                        }
+
+                        textarea {
+                            resize: none;
+                        }
+
+                        .button-wrapper {
+
+                            display: flex;
+                            justify-content: flex-end;
+
+                            button {
+                                color: white;
+                                background-color: $color-accent;
+                                outline: none;
+                                padding: 8px 15px;
+                                font-weight: 500;
+                                margin: 5px 10px 5px 0 ;
+                                border-radius: 5px;
+                                border: none;
+
+                                &:hover {
+                                    background-color: $color-secondary;
+                                    cursor: pointer;
+                                }
+
+                            }
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}

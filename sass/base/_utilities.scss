@@ -1,0 +1,59 @@
+/* Display props */
+.d-block {
+    display: block;
+}
+
+.d-i-block {
+    display: inline-block;
+}
+
+// Alignment Props
+
+.a-text-center {
+    text-align: center;
+}
+
+.a-text-right {
+    text-align: right;
+}
+
+/* Color classes */
+.text-white {
+    color: $color-white;
+}
+
+.text-primary {
+    color: $color-primary;
+}
+
+.text-secondary {
+    color: $color-primary-dark;
+}
+
+.text-accent {
+    color: $color-accent;
+}
+
+.text-accent-dark {
+    color: $color-secondary;
+}
+
+.bg-white {
+    background-color: $color-white;
+}
+
+.bg-primary {
+    background-color: $color-primary;
+}
+
+.bg-secondary {
+    background-color: $color-primary-dark;
+}
+
+.bg-accent {
+    background-color: $color-accent;
+}
+
+.bg-accent-dark {
+    background-color: $color-secondary;
+}

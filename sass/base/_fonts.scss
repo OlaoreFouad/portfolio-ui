@@ -1,0 +1,29 @@
+
+/* Font Faces */
+@font-face {
+    src: url('../fonts/LilitaOne-Regular.ttf');
+    font-family: Lilita;
+}
+
+@font-face {
+    src: url('../fonts/NotoSansHK-Black.otf');
+    font-family: Noto;
+}
+
+@font-face {
+    src: url('../fonts/Raleway-Regular.ttf');
+    font-family: Raleway;
+}
+
+/* Font Classes */
+.lilita {
+    font-family: 'Lilita', cursive;
+}
+
+.noto {
+    font-family: 'Noto', cursive;
+}
+
+.raleway {
+    font-family: 'Raleway', cursive;
+}

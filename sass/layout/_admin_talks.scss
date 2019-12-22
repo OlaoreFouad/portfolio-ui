@@ -1,0 +1,187 @@
+.admin-section-talks {
+
+    .heading-primary {
+        color: $color-primary-dark;
+        font-family: 'Lilita';
+        font-size: 3rem;
+        margin: 15px 0;
+    }
+
+    .talk-grid {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 20px;
+
+        .top-heading {
+            color: white;
+            font-weight: 700;
+            padding: 15px;
+            margin: 0;
+        }
+
+        .talks {
+
+            border: 1px solid #ccc;
+            border-radius: 4px;
+
+            .talks-top {
+                background-color: $color-primary;
+                width: 100%;
+            }
+
+            .talks-content {
+                height: 400px;
+                overflow-y: scroll;
+                width: 100%;
+                
+                .talk {
+                    padding: 10px 15px;
+
+                    &:hover {
+                        cursor: pointer;
+                        background-color: lighten(#ccc, 18%);
+
+                        i {
+                            display: block;
+                        }
+
+                    }
+                    
+                    &:not(:last-child) {
+                        border-bottom: 1.3px solid #ccc;
+                    }
+
+                    &-title {
+                        color: black;
+                        font-size: 1.5rem;
+                        font-weight: 700;
+                        padding: 5px 0;
+
+                        i {
+                            display: none;
+                            float: right;
+                            color: red;
+                        }
+                    }
+
+                    &-description {
+                        font-weight: 550;
+                        color: black;
+                    }
+
+                }
+
+            }
+        }
+
+        .talks-edit {
+
+            border: 1px solid #ccc;
+            border-radius: 4px;
+
+            .talks-edit-top {
+                background-color: $color-primary-dark;
+                display: flex;
+
+                .icon-right {
+                    margin: auto 20px auto auto;
+                    font-size: 3rem;
+                    color: lighten($color: $color-accent, $amount: 15%);
+
+                    &:hover {cursor: pointer;}
+                }
+
+            }
+
+            .talk-edit-empty {
+                display: flex;
+                text-align: center;
+                flex-direction: column;
+                margin-top: 80px;
+                justify-content: center;
+                align-items: center;
+
+                .heading {
+                    color: black;
+                    font-weight: bolder;
+                    display: block;
+                    font-size: 1.4rem;
+                }
+
+                .added-text {
+                    color: gray;
+                    font-weight: bolder;
+                    padding: 2px 20px;
+                    display: block;
+                    font-size: 1rem;
+                }
+
+            }
+
+            .talks-content {
+
+                height: 400px;
+                overflow-y: scroll;
+
+                .submit-button {
+
+                    text-align: center;
+                    margin: 5px 0;
+
+                    button {
+                        color: white;
+                        background-color: $color-accent;
+                        padding: 10px 40px;
+                        outline: none;
+                        border: none;
+                        font-weight: bolder;
+                        border-radius: 5px;
+
+                        &:hover {
+                            cursor: pointer;
+                            background-color: darken($color-accent, 10%);
+                        }
+                    }
+                }
+
+                .input {
+                    padding: 10px 15px;
+
+                    label {
+                        color: $color-accent;
+                        font-size: 1rem;
+                        display: block;
+                        margin-bottom: 5px;
+                        font-weight: 650;
+                    }
+
+                    .tags {
+                        display: flex;
+                        justify-content: space-around;
+                    }
+
+                    input[type=text], input[type=date], textarea {
+                        width: 100%;
+                        border: 1px solid #ccc;
+                        border-radius: 5px;
+                        padding: 5px 0;
+                        text-indent: 2%;
+                        font-weight: 700;
+                        resize: none;
+                        caret-color: $color-primary-dark;
+
+                        &:focus {
+                            outline: none;
+                            box-shadow: 1px 1px 3px $color-primary-dark;
+                        }
+
+                    }
+
+                }
+
+            }
+        }
+
+    }
+
+}
