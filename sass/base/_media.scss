@@ -72,45 +72,16 @@
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-
     .modal {
         .modal-content {
             margin-top: 30%;
             width: 70vw;
         }
     }
-
-    .posts {
-        .post {
-            &:nth-child(1) {
-                @include add-space;
-            }
-
-            &:nth-child(2) {
-                @include add-space;
-            }
-
-            &:nth-child(3) {
-                @include add-space;
-            }
-        }
-    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) and (max-width: 768px) {
-    .posts {
-        .post {
-
-            &:nth-child(1) {
-                @include add-space;
-            }
-
-            &:nth-child(2) {
-                @include add-space;
-            }
-        }
-    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -122,17 +93,6 @@
     //         margin-top: 40%;
     //     }
     // }
-
-    .post {
-        &:nth-child(3) {
-            margin-top: 0;
-        }
-
-        .post-content {
-            padding: 10px;
-        }
-
-    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -140,12 +100,6 @@
     .posts {
         display: grid;
         grid-template: 1fr / repeat(auto-fit, minmax(280px, 1fr));
-
-        .post {
-            &:nth-child(3) {
-                margin-top: -15%;
-            }
-        }
         // grid-gap: 10px;
     }
 }

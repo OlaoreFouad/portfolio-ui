@@ -676,22 +676,11 @@ header {
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); }
-  .post:nth-child(3) {
-    margin-top: 0 !important; }
-  .post:nth-child(4) {
-    margin-top: 15%; }
-  .post:nth-child(5) {
-    margin-top: 15%; }
-  .post:nth-child(6) {
-    margin-top: 15%; }
   .post img {
-    height: 150px;
-    width: 80%;
-    position: relative;
-    left: 10%;
-    right: 10%;
-    margin-top: -13%;
-    border-radius: 5px; }
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px; }
   .post .post-tags .post-tag {
     font-style: italic;
     margin: 2px 3px; }
@@ -868,35 +857,15 @@ header {
 @media only screen and (max-width: 600px) {
   .modal .modal-content {
     margin-top: 30%;
-    width: 70vw; }
-  .posts .post:nth-child(1) {
-    margin-top: 15%; }
-  .posts .post:nth-child(2) {
-    margin-top: 15%; }
-  .posts .post:nth-child(3) {
-    margin-top: 15%; } }
+    width: 70vw; } }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) and (max-width: 768px) {
-  .posts .post:nth-child(1) {
-    margin-top: 15%; }
-  .posts .post:nth-child(2) {
-    margin-top: 15%; } }
-
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  .post:nth-child(3) {
-    margin-top: 0; }
-  .post .post-content {
-    padding: 10px; } }
-
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .posts {
     display: grid;
-    grid-template: 1fr/repeat(auto-fit, minmax(280px, 1fr)); }
-    .posts .post:nth-child(3) {
-      margin-top: -15%; } }
+    grid-template: 1fr/repeat(auto-fit, minmax(280px, 1fr)); } }
 
 /* Browser resets. */
 * {
