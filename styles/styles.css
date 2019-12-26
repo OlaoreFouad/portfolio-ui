@@ -730,11 +730,10 @@ header {
   /* Hidden by default */
   position: fixed;
   /* Stay in place */
-  z-index: 1;
+  z-index: 999;
   /* Sit on top */
   left: 0;
   top: 0;
-  visibility: hidden;
   width: 100%;
   /* Full width */
   height: 100%;
