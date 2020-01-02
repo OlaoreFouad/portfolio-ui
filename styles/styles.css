@@ -555,6 +555,24 @@ header {
             outline: none;
             box-shadow: 1px 1px 3px #fdcb6e; }
 
+.section-skills {
+  background-color: #fdcb6e;
+  margin: 20px 0; }
+  .section-skills .message-content {
+    width: 40vw;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px 5px; }
+    .section-skills .message-content h1 {
+      color: white;
+      font-weight: 700;
+      font-size: 2rem;
+      font-family: 'Monsterrat';
+      margin: 5px 0; }
+    .section-skills .message-content p {
+      color: white;
+      font-size: 1.2rem; }
+
 .admin-section-talks .heading-primary {
   color: #fdcb6e;
   font-family: 'Lilita';

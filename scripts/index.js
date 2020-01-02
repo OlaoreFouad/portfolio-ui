@@ -1,5 +1,5 @@
 
-registerModal()
+//registerModal()
 
 function registerModal() {
     const modal = document.getElementById('modal');
