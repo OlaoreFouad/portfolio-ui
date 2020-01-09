@@ -16,3 +16,24 @@ body {
     padding-left: 10%;
     padding-right: 10%;
 }
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    background: #fff;
+    border-right: 1px solid lighten($color: #ccc, $amount: 12%);
+    border-left: 1px solid lighten($color: #ccc, $amount: 12%);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: lighten($color-primary-dark, 10%);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: $color-primary-dark;
+}

@@ -28,6 +28,20 @@
         }
 
     }
+
+    .section-skills {
+
+        .message {
+
+            &-content {
+                width: 65vw;
+                padding: 6.5rem 0;
+            }
+
+        }
+
+    }
+
 }
 
 @media(max-width: 825px) {
@@ -52,12 +66,54 @@
         }
     }
 
+    .section-skills {
+
+        .skills-card {
+
+            .skill { 
+                grid-column: 1 / -1;
+                padding: 1.5rem 0;
+
+                &:nth-child(2) {
+                    border: none;
+                    border-top: 1px solid lighten($color: #ccc, $amount: 12%);
+                    border-bottom: 1px solid lighten($color: #ccc, $amount: 12%);
+                }
+
+             }
+
+        }
+
+    }
+
 }
 
-@media(max-width: 400px) {
+@media (max-width: 425px) {
+    .section-skills {
+
+        .message {
+
+            &-content {
+                width: 75vw;
+            }
+
+        }
+
+    }
+}
+
+@media(max-width: 500px) {
     
     .form-pane {
         width: 100%;
+    }
+
+    .section-contact {
+        padding: 0;
+
+        .contact-grid-intro {
+            padding: $section-padding;
+        }
     }
 
     .modal {

@@ -1,28 +1,140 @@
 .section-skills {
-
-    background-color: $color-primary-dark;
     margin: 20px 0;
 
     .message {
+        background-color: $color-primary-dark;
 
         &-content {
 
             width: 40vw;
             margin: 0 auto;
             text-align: center;
-            padding: 10px 5px;
+            padding: 9rem .5rem;
 
             h1 {
                 color: white;
                 font-weight: 700;
                 font-size: 2rem;
-                font-family: 'Monsterrat';
+                font-family: 'Noto', cursive;
                 margin: 5px 0;
             }
 
             p {
                 color: white;
                 font-size: 1.2rem;
+            }
+
+        }
+
+    }
+
+    .skills-card {
+        background-color: white;
+        margin: -5rem 20px 5px 20px;
+        border-radius: 3.5px;
+        border: 1px solid lighten($color: #ccc, $amount: 12%);
+        box-shadow: .2rem 0 .7rem rgba($color: #000000, $alpha: .4);  
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        .skill {
+
+            padding: 3rem 0;
+            &:nth-child(2) {
+                border-right: 1px solid lighten($color: #ccc, $amount: 12%);
+                border-left: 1px solid lighten($color: #ccc, $amount: 12%);
+            }
+
+            &-image {
+
+                width: 100%;
+                height: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 1.5rem 0;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    overflow: hidden;
+                }
+
+            }
+            
+            .skill-top {
+
+                width: 100%;
+                text-align: center;
+
+                .title {
+                    display: block;
+                    font-weight: 700;
+                    font-size: 1.3rem;
+                }
+                .description {
+                    display: block;
+                    width: 70%;
+                    line-height: 1.5;
+                    margin: 0 auto;
+                    font-size: 1rem;
+                    font-style: italic;
+                    padding: 1.2rem 0;
+                }
+            }
+
+            &-content {
+                .skills-what {
+
+                    width: 100%;
+                    text-align: center;
+                    padding-bottom: 1rem;
+
+                    &-title {
+                        color: $color-primary-dark;
+                        font-weight: 600;
+                        padding: 4px 0;
+                        font-size: 1rem;
+                    }
+
+                    &-content {
+                        width: 60%;
+                        margin: 0 auto;
+                        font-weight: 700;
+                    }
+
+                }
+                .skills-with {
+
+                    margin: 1rem 0;
+                    width: 100%;
+                    text-align: center;
+
+                    &-title {
+                        color: $color-primary-dark;
+                        font-weight: 600;
+                        font-size: 1rem;
+                    }
+
+                    &-content {
+
+                        width: 60%;
+                        margin: 0 auto;
+                        
+                        .list {
+                            list-style: none;
+                            text-align: center;
+                            padding: 0;
+
+                            li {
+                                font-size: 1rem;
+                            }
+
+                        }
+
+                    }
+
+                }
             }
 
         }
