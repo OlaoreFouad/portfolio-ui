@@ -62,7 +62,9 @@
                 <div class="works-edit">
                     <div class="works-edit-top">
                         <h2 class="top-heading">Works Edit</h2>
-                        <span class="icon-right">&plus;</span>
+                        <button class="icon-right">
+                            Add Work
+                        </button>
                     </div>
                     <!-- <div class="work-edit-empty">
                         <span class="heading">No work selected</span>
@@ -160,7 +162,9 @@
                 <div class="talks-edit">
                     <div class="talks-edit-top">
                         <h2 class="top-heading">Talks Edit</h2>
-                        <span class="icon-right">&plus;</span>
+                        <button class="icon-right">
+                            Add Talk
+                        </button>
                     </div>
                     <!-- <div class="talk-edit-empty">
                         <span class="heading">No talk selected</span>
@@ -169,20 +173,20 @@
                     <div class="talks-content">
                         <form>
                             <div class="input">
-                                <label for="title">Title</label>
-                                <input type="text" name="title" id="title">
+                                <label for="t_title">Title</label>
+                                <input type="text" name="t_title" id="t_title">
                             </div>
                             <div class="input">
-                                <label for="description">Description</label>
-                                <textarea name="description" id="description" cols="30" rows="6"></textarea>
+                                <label for="t_description">Description</label>
+                                <textarea name="t_description" id="t_description" cols="30" rows="6"></textarea>
                             </div>
                             <div class="input">
-                                <label for="date">Date</label>
-                                <input type="date" name="date" id="date">
+                                <label for="t_date">Date</label>
+                                <input type="date" name="t_date" id="t_date">
                             </div>
                             <div class="input">
-                                <label for="venue">Venue</label>
-                                <input type="text" name="venue" id="venue">
+                                <label for="t_venue">Venue</label>
+                                <input type="text" name="t_venue" id="t_venue">
                             </div>
                             <div class="input">
                                 <label for="upcoming">Upcoming</label>
@@ -191,6 +195,98 @@
                             <div class="input">
                                 <label for="slides">Slides</label>
                                 <input type="text" name="slides" id="slides">
+                            </div>
+                            <div class="submit-button">
+                                <button>Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="admin-section-skill">
+            <h1 class="heading-primary">Skills</h1>
+            <div class="skill-grid">
+                <div class="skills">
+                    <div class="skills-top">
+                        <h2 class="top-heading">Skills</h2>
+                    </div>
+                    <div class="skills-content">
+                        <div class="skill">
+                            <div class="skill-title">Lorem ipsum dolor sit. <i class="fa fa-trash-o"></i></div>
+                            <div class="skill-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, veritatis?</div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-title">Lorem ipsum dolor sit. <i class="fa fa-trash-o"></i></div>
+                            <div class="skill-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, veritatis?</div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-title">Lorem ipsum dolor sit. <i class="fa fa-trash-o"></i></div>
+                            <div class="skill-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, veritatis?</div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-title">Lorem ipsum dolor sit. <i class="fa fa-trash-o"></i></div>
+                            <div class="skill-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, veritatis?</div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-title">Lorem ipsum dolor sit. <i class="fa fa-trash-o"></i></div>
+                            <div class="skill-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, veritatis?</div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-title">Lorem ipsum dolor sit. <i class="fa fa-trash-o"></i></div>
+                            <div class="skill-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, veritatis?</div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-title">Lorem ipsum dolor sit. <i class="fa fa-trash-o"></i></div>
+                            <div class="skill-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, veritatis?</div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-title">Lorem ipsum dolor sit. <i class="fa fa-trash-o"></i></div>
+                            <div class="skill-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, veritatis?</div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-title">Lorem ipsum dolor sit. <i class="fa fa-trash-o"></i></div>
+                            <div class="skill-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, veritatis?</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-edit">
+                    <div class="skills-edit-top">
+                        <h2 class="top-heading">Skills Edit</h2>
+                        <button class="icon-right">
+                            Add Skill
+                        </button>
+                    </div>
+                    <!-- <div class="skill-edit-empty">
+                        <span class="heading">No work selected</span>
+                        <span class="added-text">Select a work on the right to edit, or click the <b>Add</b> button to add a new work</span>
+                    </div> -->
+                    <div class="skills-content">
+                        <form>
+                            <div class="input">
+                                <label for="s_title">Title</label>
+                                <input type="text" name="s_title" id="s_title">
+                            </div>
+                            <div class="input">
+                                <label for="s_description">Description</label>
+                                <textarea name="s_description" id="s_description" cols="30" rows="6"></textarea>
+                            </div>
+                            <div class="input">
+                                <label for="s_what">What I Do</label>
+                                <textarea name="s_what" id="s_what" cols="30" rows="6"></textarea>
+                            </div>
+                            <div class="input">
+                                <label for="s_with">I Do The Above With:</label>
+                                <div class="with">
+                                    <input type="text"> <button>Add With</button>
+                                </div>
+                                <ul>
+                                    <li>One</li>
+                                    <li>Two</li>
+                                    <li>Three</li>
+                                    <li>Four</li>
+                                </ul>
                             </div>
                             <div class="submit-button">
                                 <button>Submit</button>

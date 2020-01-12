@@ -492,10 +492,17 @@ header {
       display: flex; }
       .admin-section-work .work-grid .works-edit .works-edit-top .icon-right {
         margin: auto 20px auto auto;
-        font-size: 3rem;
-        color: #c8cdff; }
+        font-size: 1rem;
+        background-color: #c8cdff;
+        color: white;
+        transition: all .3s;
+        padding: 5px 15px;
+        outline: none;
+        border: none;
+        border-radius: 4px; }
         .admin-section-work .work-grid .works-edit .works-edit-top .icon-right:hover {
-          cursor: pointer; }
+          cursor: pointer;
+          background-color: #7b88ff; }
     .admin-section-work .work-grid .works-edit .work-edit-empty {
       display: flex;
       text-align: center;
@@ -576,7 +583,7 @@ header {
   .section-skills .skills-card {
     background-color: white;
     margin: -5rem 20px 5px 20px;
-    border-radius: 3.5px;
+    border-radius: 5px;
     border: 1px solid #ebebeb;
     box-shadow: 0.2rem 0 0.7rem rgba(0, 0, 0, 0.4);
     display: grid;
@@ -697,10 +704,17 @@ header {
       display: flex; }
       .admin-section-talks .talk-grid .talks-edit .talks-edit-top .icon-right {
         margin: auto 20px auto auto;
-        font-size: 3rem;
-        color: #c8cdff; }
+        font-size: 1rem;
+        background-color: #c8cdff;
+        color: white;
+        transition: all .3s;
+        padding: 5px 15px;
+        outline: none;
+        border: none;
+        border-radius: 4px; }
         .admin-section-talks .talk-grid .talks-edit .talks-edit-top .icon-right:hover {
-          cursor: pointer; }
+          cursor: pointer;
+          background-color: #7b88ff; }
     .admin-section-talks .talk-grid .talks-edit .talk-edit-empty {
       display: flex;
       text-align: center;
@@ -759,6 +773,160 @@ header {
           .admin-section-talks .talk-grid .talks-edit .talks-content .input input[type=text]:focus, .admin-section-talks .talk-grid .talks-edit .talks-content .input input[type=date]:focus, .admin-section-talks .talk-grid .talks-edit .talks-content .input textarea:focus {
             outline: none;
             box-shadow: 1px 1px 3px #fdcb6e; }
+
+.admin-section-skill .heading-primary {
+  color: #fdcb6e;
+  font-family: 'Lilita';
+  font-size: 3rem;
+  margin: 15px 0; }
+
+.admin-section-skill .skill-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 20px; }
+  .admin-section-skill .skill-grid .top-heading {
+    color: white;
+    font-weight: 700;
+    padding: 15px;
+    margin: 0; }
+  .admin-section-skill .skill-grid .skills {
+    border: 1px solid #ccc;
+    border-radius: 4px; }
+    .admin-section-skill .skill-grid .skills .skills-top {
+      background-color: #fff3b1;
+      width: 100%; }
+    .admin-section-skill .skill-grid .skills .skills-content {
+      height: 400px;
+      overflow-y: scroll;
+      width: 100%; }
+      .admin-section-skill .skill-grid .skills .skills-content .skill {
+        padding: 10px 15px; }
+        .admin-section-skill .skill-grid .skills .skills-content .skill:hover {
+          cursor: pointer;
+          background-color: #fafafa; }
+          .admin-section-skill .skill-grid .skills .skills-content .skill:hover i {
+            display: block; }
+        .admin-section-skill .skill-grid .skills .skills-content .skill:not(:last-child) {
+          border-bottom: 1.3px solid #ccc; }
+        .admin-section-skill .skill-grid .skills .skills-content .skill-title {
+          color: black;
+          font-size: 1.5rem;
+          font-weight: 700;
+          padding: 5px 0; }
+          .admin-section-skill .skill-grid .skills .skills-content .skill-title i {
+            display: none;
+            float: right;
+            color: red; }
+        .admin-section-skill .skill-grid .skills .skills-content .skill-description {
+          font-weight: 550;
+          color: black; }
+  .admin-section-skill .skill-grid .skills-edit {
+    border: 1px solid #ccc;
+    border-radius: 4px; }
+    .admin-section-skill .skill-grid .skills-edit .skills-edit-top {
+      background-color: #fdcb6e;
+      display: flex; }
+      .admin-section-skill .skill-grid .skills-edit .skills-edit-top .icon-right {
+        margin: auto 20px auto auto;
+        font-size: 1rem;
+        background-color: #c8cdff;
+        color: white;
+        transition: all .3s;
+        padding: 5px 15px;
+        outline: none;
+        border: none;
+        border-radius: 4px; }
+        .admin-section-skill .skill-grid .skills-edit .skills-edit-top .icon-right:hover {
+          cursor: pointer;
+          background-color: #7b88ff; }
+    .admin-section-skill .skill-grid .skills-edit .skill-edit-empty {
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      margin-top: 80px;
+      justify-content: center;
+      align-items: center; }
+      .admin-section-skill .skill-grid .skills-edit .skill-edit-empty .heading {
+        color: black;
+        font-weight: bolder;
+        display: block;
+        font-size: 1.4rem; }
+      .admin-section-skill .skill-grid .skills-edit .skill-edit-empty .added-text {
+        color: gray;
+        font-weight: bolder;
+        padding: 2px 20px;
+        display: block;
+        font-size: 1rem; }
+    .admin-section-skill .skill-grid .skills-edit .skills-content {
+      height: 400px;
+      overflow-y: scroll; }
+      .admin-section-skill .skill-grid .skills-edit .skills-content .submit-button {
+        text-align: center;
+        margin: 5px 0; }
+        .admin-section-skill .skill-grid .skills-edit .skills-content .submit-button button {
+          color: white;
+          background-color: #7b88ff;
+          padding: 10px 40px;
+          outline: none;
+          border: none;
+          font-weight: bolder;
+          border-radius: 5px; }
+          .admin-section-skill .skill-grid .skills-edit .skills-content .submit-button button:hover {
+            cursor: pointer;
+            background-color: #485aff; }
+      .admin-section-skill .skill-grid .skills-edit .skills-content .input {
+        padding: 10px 15px; }
+        .admin-section-skill .skill-grid .skills-edit .skills-content .input label {
+          color: #7b88ff;
+          font-size: 1rem;
+          display: block;
+          margin-bottom: 5px;
+          font-weight: 650; }
+        .admin-section-skill .skill-grid .skills-edit .skills-content .input input[type=text], .admin-section-skill .skill-grid .skills-edit .skills-content .input textarea {
+          width: 100%;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          padding: 5px 0;
+          text-indent: 2%;
+          font-weight: 700;
+          resize: none;
+          caret-color: #fdcb6e; }
+          .admin-section-skill .skill-grid .skills-edit .skills-content .input input[type=text]:focus, .admin-section-skill .skill-grid .skills-edit .skills-content .input textarea:focus {
+            outline: none;
+            box-shadow: 1px 1px 3px #fdcb6e; }
+        .admin-section-skill .skill-grid .skills-edit .skills-content .input .with {
+          display: grid;
+          grid-template-columns: 50% 45%;
+          gap: 20px; }
+          .admin-section-skill .skill-grid .skills-edit .skills-content .input .with input label {
+            color: #7b88ff;
+            font-size: 1rem;
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 650; }
+          .admin-section-skill .skill-grid .skills-edit .skills-content .input .with input input[type=text], .admin-section-skill .skill-grid .skills-edit .skills-content .input .with input textarea {
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 5px 0;
+            text-indent: 2%;
+            font-weight: 700;
+            resize: none;
+            caret-color: #fdcb6e; }
+            .admin-section-skill .skill-grid .skills-edit .skills-content .input .with input input[type=text]:focus, .admin-section-skill .skill-grid .skills-edit .skills-content .input .with input textarea:focus {
+              outline: none;
+              box-shadow: 1px 1px 3px #fdcb6e; }
+          .admin-section-skill .skill-grid .skills-edit .skills-content .input .with button {
+            color: white;
+            background-color: #7b88ff;
+            padding: 10px 40px;
+            outline: none;
+            border: none;
+            font-weight: bolder;
+            border-radius: 5px; }
+            .admin-section-skill .skill-grid .skills-edit .skills-content .input .with button:hover {
+              cursor: pointer;
+              background-color: #485aff; }
 
 .post {
   background-color: #fff;
